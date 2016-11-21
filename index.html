@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Poker</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div class="container-fluid">
+  <div clas="row">
+    <div class="col-md-6 game">
+      <ul id="dice">
+
+      </ul>
+      <button type="button" class="btn btn-success" id="roll">Roll Dice</button>
+    </div><!-- /.game -->
+    <div class="col-md-6 card">
+      <h2>Numbers</h2>
+      <dl>
+        <dt data-item="number" data-number="1">Ones</dt>
+        <DD data-value="1"></dd>
+        <dt data-item="number" data-number="2">Twos</dt>
+        <DD data-value="2"></dd>
+        <dt data-item="number" data-number="3">Threes</dt>
+        <DD data-value="3"></dd>
+        <dt data-item="number" data-number="4">Fours</dt>
+        <DD data-value="4"></dd>
+        <dt data-item="number" data-number="5">Fives</dt>
+        <DD data-value="5"></dd>
+        <dt data-item="number" data-number="6">Sixes</dt>
+        <DD data-value="6"></dd>
+      <h2>Runs</h2>
+      <dl>
+        <dt data-item="pokerdice">Pokerdice (5 of a kind)</dt>
+        <dd data-value='pokerdice'></dd>
+        <dt data-item="4kind">4 of a kind</dt>
+        <dd data-value='4kind'></dd>
+        <dt data-item="3kind">3 of a kind</dt>
+        <dd data-value='3kind'></dd>
+        <dt data-item="pair">Pair</dt>
+        <dd data-value='pair'></dd>
+      </dl>
+      <h2>Straights</h2>
+      <dl>
+        <dt data-item="small-straight">Small straight (4 dice)</dt>
+        <dd data-value='small-straight'></dd>
+        <dt data-item="large-straight">Large Straight (5 dice)</dt>
+        <dd data-value='large-straight'></dd>
+      </dl>
+      <h2>Full House</h2>
+      <dl>
+        <dt data-item="full-house">Fullhouse</dt>
+        <dd data-value='full-house'></dd>
+      </dl>
+    </div>
+  </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
